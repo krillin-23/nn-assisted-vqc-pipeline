@@ -114,7 +114,7 @@ def load_model(depth):
     if not os.path.exists(path):
         raise FileNotFoundError(
             f"Model file '{path}' not found.\n"
-            f"Run the training script (1.py) first to generate it."
+            f"Run Training.py first to generate it."
         )
     m = np.load(path)
     print(f"  [✓] Loaded model: {path}  "
